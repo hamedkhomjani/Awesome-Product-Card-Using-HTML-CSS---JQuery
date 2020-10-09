@@ -14,7 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background: ivory;
+    background: rgb(255, 255, 255);
     transition: 0.6s linear;
 }
 
@@ -66,14 +66,6 @@ body {
     background: #f7f7f7;
 }
 
-.green {
-    background: #1B4D4C;
-}
-
-.grey {
-    background: #808281;
-}
-
 .black {
     background: #121111;
 }
@@ -100,14 +92,14 @@ body {
 }
 
 .product-price {
-    color: #958ff7;
-    font-size: 30px;
+    color: #ffffff;
+    font-size: 22px;
     transition: .6s linear;
 }
 
 .product-button {
     margin-left: auto;
-    color: #958ff7;
+    color: #ffffff;
     text-decoration: none;
     border: 2px solid;
     padding: 8px 24px;
