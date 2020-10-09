@@ -74,11 +74,11 @@ body {
     background: #990410;
 }
 
-.product-colors .active:after {
+.product-colors .active::after {
     content: "";
     width: 22px;
     height: 22px;
-    border: 2px solid #8888;
+    border: 2px solid rgb(126, 126, 126);
     position: absolute;
     border-radius: 50%;
     box-sizing: border-box;
@@ -108,5 +108,5 @@ body {
 }
 
 .product-button:hover {
-    transform: scale(1.06);
+    transform: scale(1.1);
 }

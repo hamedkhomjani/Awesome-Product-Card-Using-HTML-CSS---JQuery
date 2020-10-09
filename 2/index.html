@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Product Card 2</title>
     <link rel="stylesheet" href="cardstyle.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -16,13 +16,24 @@
         <div class="product-pic"></div>
         <div class="product-colors">
             <span class="white active" data-color="#f7f7f7" data-pic="url(air-zoom-bb-nxt-whithe.jpg)"></span>
-            <span class="black" data-color="#121111" data-pic="url(air-zoom-bb-nxt-blak.jpg)"></span>
+            <span class="black" data-color="#121111" data-pic="url(air-zoom-bb-nxt-black.jpg)"></span>
             <span class="red" data-color="#990410" data-pic="url(air-zoom-bb-nxt-red.jpg)"></span>
         </div>
         <div class="product-info">
             <div class="product-price">1,949 SEK</div>
             <div class="product-button" href="#">Add to Bag</div>
         </div>
+
+        <script>
+            $(".product-colors span").click(function() {
+                $(".product-colors span").removeClass("active");
+                $(this).addClass("active");
+                $("body").css("background", $(this).attr("data-color"));
+                $(".product-price").css("color", $(this).attr("data-color"));
+                $(".product-button").css("color", $(this).attr("data-color"));
+                $(".product-pic").css("background-image", $(this).attr("data-pic"));
+            })
+        </script>
 
     </div>
 </body>
